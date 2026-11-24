@@ -2,10 +2,106 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-    <title>myfirstprject</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunday laundart</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <h1>Hello, World!</h1>
+    <header>
+        <nav>
+            <div class="logo container">
+                <a class="logo-link" href="#home" aria-label="Sunday's Laundry Spot home">
+                    <img src="sunday-laundry-logo.jpg" alt="Sunday’s Laundry Spot — Cleaner clothes, better living">
+                </a>
+            </div>
+
+            <!-- CSS-only menu toggle (visible on tablet/mobile only) -->
+            <input class="menu-checkbox" type="checkbox" id="menu-toggle" aria-label="Toggle navigation menu">
+            <label class="menu-toggle" for="menu-toggle" aria-hidden="true">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <!-- everything below collapses on tablet/mobile -->
+            <div class="menu" id="main-menu">
+                <div class="fivebuttons">
+                    <button type="button">Service</button>
+                    <button type="button">Price</button>
+                    <button type="button">How it works</button>
+                    <button type="button">Questions</button>
+                    <button type="button">Complaints</button>
+                </div>
+
+                <div class="account-section">
+                    <div class="button container">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M19 12V19H5V12H3V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V12H19ZM13 12.67L15.59 10.09L17 11.5L12 16.5L7 11.5L8.41 10.09L11 12.67V3H13V12.67Z" fill="#0D99FF"/>
+                        </svg>
+                        <span class="text">Install app</span>
+                    </div>
+
+                    <div class="translator box">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23" fill="none">
+                            <path d="M11.5 20.125H9.34375C6.54063 20.125 4.3125 17.8969 4.3125 15.0938V12.2188H5.75V15.0938C5.75 17.1063 7.33125 18.6875 9.34375 18.6875H11.5V20.125ZM20.125 21.5625H21.7063L18.4 13.6562H16.8187L13.5125 21.5625H15.0938L15.6687 20.125H19.4781L20.125 21.5625ZM16.3156 18.6875L17.6094 15.525L18.9031 18.6875H16.3156ZM20.125 10.7812H18.6875V7.90625C18.6875 5.89375 17.1062 4.3125 15.0938 4.3125H12.2188V2.875H15.0938C17.8969 2.875 20.125 5.10313 20.125 7.90625V10.7812ZM10.0625 3.59375V2.15625H6.46875V0.71875H5.03125V2.15625H1.4375V3.59375H7.33125C7.1875 4.24062 6.75625 5.39062 5.75 6.46875C5.31875 5.96562 4.95937 5.4625 4.74375 5.03125H3.09063C3.37813 5.75 3.88125 6.6125 4.6 7.40313C4.025 7.90625 3.1625 8.3375 2.15625 8.69688L2.65938 10.0625C3.95312 9.55937 4.95937 8.98438 5.75 8.40937C6.54063 9.05625 7.54688 9.63125 8.84063 10.0625L9.34375 8.69688C8.3375 8.3375 7.475 7.83438 6.82812 7.40313C8.19375 5.96563 8.625 4.45625 8.76875 3.59375H10.0625Z" fill="#0D99FF"/>
+                        </svg>
+                        <div class="language-toggle">
+                            <button class="selected" type="button">English</button>
+                            <button type="button">Pidgin</button>
+                        </div>
+                    </div>
+
+                    <div class="action buttons">
+                        <button type="button">Login</button>
+                        <button type="button">Book a pickup</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="home" aria-labelledby="hero-title">
+            <div class="hero-bubbles" aria-hidden="true">
+                <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+            </div>
+            <div class="hero-inner">
+                <div class="hero-content">
+                    <p class="hero-eyebrow"><span aria-hidden="true">⌖</span> Ajegunle · Tolu · Ajeromi-Ifelodun</p>
+                    <h1 id="hero-title">Clean clothes,<br><em>no stress.</em></h1>
+                    <p class="hero-copy">We wash, iron and pack your clothes. We can pick them up from your house and bring them back. You relax.</p>
+                    <div class="hero-actions">
+                        <button class="hero-cta" type="button">Book a pickup <span aria-hidden="true">→</span></button>
+                        <button class="hero-secondary" type="button">See our prices</button>
+                    </div>
+                    <div class="hero-trust">
+                        <span><b aria-hidden="true">◷</b> Ready in 4 days</span>
+                        <span><b aria-hidden="true">✦</b> Express in 24 hours</span>
+                        <span><b aria-hidden="true">✓</b> Pay online or cash</span>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="hero-image-frame"></div>
+                    <img class="hero-image" src="imgi_1_hero.jpeg" alt="Rows of clean, modern washing machines in a laundromat">
+                    <div class="hero-float hero-float-ready">
+                        <span class="float-icon ready-icon" aria-hidden="true">✓</span>
+                        <span><strong>Your clothes are ready!</strong><small>Ready for pickup</small></span>
+                    </div>
+                    <div class="hero-float hero-float-booked">
+                        <span class="float-icon booked-icon" aria-hidden="true">↗</span>
+                        <span><strong>Pickup booked</strong><small>Today, 10am–12pm</small></span>
+                    </div>
+                    <div class="hero-float hero-float-done">
+                        <span class="float-icon done-icon" aria-hidden="true">✦</span>
+                        <span><strong>Washed &amp; ironed</strong><small class="hero-stars" aria-label="5 out of 5 stars">★★★★★</small></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
 </body>
 </html>
